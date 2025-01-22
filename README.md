@@ -1,4 +1,4 @@
-# Data Project Template
+# NASA Meteorite Project
 
 ## Table of Contents
 - [Background and Overview](#background-and-overview)
