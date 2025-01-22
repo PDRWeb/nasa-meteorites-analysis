@@ -27,7 +27,7 @@ The dataset consists of several columns, including:
 - `reclong`: The longitude where the meteorite was found.
 - `GeoLocation`: The geographical location (latitude, longitude).
 
-![Data Structure](./creative/Meteorite Landings.png)
+![Data Structure](/creative/Meteorite%20Landings.png)
 
 ## Executive Summary
 This analysis reveals several critical insights:
