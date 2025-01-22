@@ -7,57 +7,79 @@
 - [Insights Deep Dive](#insights-deep-dive)
 - [Recommendations](#recommendations)
 - [Clarifying Questions, Assumptions, and Caveats](#clarifying-questions-assumptions-and-caveats)
+- [Project Organization](#project-organization)
 
 ## Background and Overview
-Provide background context and overview of the purpose of the data analysis and the business and the questions being answered by the analysis.
+The purpose of this data analysis project is to analyze meteorite landings data provided by NASA. The goal is to identify patterns and insights that can help in understanding the distribution, composition, and frequency of meteorite landings on Earth. This analysis will answer key questions such as:
+- What are the most common types of meteorites?
+- Where are meteorites most commonly found?
+- What is the average size and weight of meteorites?
 
 ## Data Structure Overview
-Show the structure of the data, ideally include a diagram, can create one from [here](https://dbdiagram.io/home)
+The dataset consists of several columns, including:
+- `name`: The name of the meteorite.
+- `id`: A unique identifier for the meteorite.
+- `recclass`: The classification of the meteorite.
+- `mass (g)`: The mass of the meteorite in grams.
+- `fall`: Whether the meteorite fell or was found.
+- `year`: The year the meteorite was observed.
+- `reclat`: The latitude where the meteorite was found.
+- `reclong`: The longitude where the meteorite was found.
+- `GeoLocation`: The geographical location (latitude, longitude).
+
+A diagram of the data structure can viewed [here](https://dbdiagram.io/d/Meteorite-Landings-6790250137f5d6cbeb7e08e9).
 
 ## Executive Summary
-Speaking directly to the stakeholders, make sure to **highlight** the most critical insights within the *context*. Provide around 3 to 5 **critical** points.
+This analysis reveals several critical insights:
+1. **Common Meteorite Types**: The most common meteorite classifications are `L5`, `H5`, and `L6`.
+2. **Geographical Distribution**: Meteorites are most commonly found in Antarctica, North America, and Africa.
+3. **Meteorite Mass**: The average mass of meteorites varies significantly, with some weighing less than a gram and others over a ton.
+4. **Temporal Patterns**: There is a noticeable increase in meteorite findings in recent years, likely due to improved detection methods.
+5. **Fall vs. Found**: A majority of meteorites are found rather than observed falling.
+
+Here is interactive [Tableau Public Dashboard](https://public.tableau.com/app/profile/paul.rodriguez7799/viz/nasa_FtoT/Dashboard) for deeper insights.
 
 ## Insights Deep Dive
-Go into deeper insights and greater detail, show off the story of the data, and visualizations to help guide the general audience.
+### Common Meteorite Types
+The dataset shows that `L5`, `H5`, and `L6` are the most frequently occurring meteorite classifications. These types are stony meteorites, which are the most common type found on Earth.
+
+### Geographical Distribution
+Meteorites are predominantly found in Antarctica due to the continent's ice sheets, which make meteorites easier to spot. North America and Africa also have high numbers of meteorite findings, likely due to extensive search efforts and favorable conditions for preservation.
+
+### Meteorite Mass
+The mass of meteorites ranges from a few grams to several tons. The largest meteorite in the dataset weighs over 60 tons. The distribution of meteorite mass is highly skewed, with most meteorites weighing less than a kilogram.
+
+### Temporal Patterns
+There has been a significant increase in the number of meteorites found in the last few decades. This trend is attributed to advancements in technology and increased interest in meteorite hunting.
+
+### Fall vs. Found
+The data indicates that most meteorites are found long after they have fallen, rather than being observed during their fall. This suggests that many meteorites go unnoticed when they initially land.
 
 ## Recommendations
-Tell the story and recommendations for the next steps.
+Based on the insights gained from this analysis, the following recommendations are made:
+1. **Increase Search Efforts in Underexplored Areas**: Focus on regions with fewer meteorite findings to potentially discover new meteorite types.
+2. **Enhance Detection Methods**: Invest in technology to improve the detection and tracking of meteorites as they enter the Earth's atmosphere.
+3. **Public Awareness Campaigns**: Educate the public on how to identify and report meteorite findings to increase the number of documented meteorites.
 
 ## Clarifying Questions, Assumptions, and Caveats
 ### Questions for Stakeholders Prior to Project Advancement
-- Ask any questions that may come up during cleaning or analysis only a stakeholder would know.
-- add more if needed.
+- Are there any specific meteorite classifications of interest?
+- Should the analysis focus on a particular geographical region?
+- Are there any known biases in the data collection process?
+
 ### Assumptions and Caveats
-- what is assumed?
+- **Assumptions**: It is assumed that the dataset provided by NASA is accurate and complete. The analysis also assumes that the geographical coordinates are correctly recorded.
+- **Caveats**: The dataset may have biases due to uneven search efforts across different regions. Additionally, some meteorites may have been misclassified or not reported.
 
 --------
-## Adjusting .gitignore
-
-Ensure you adjust the `.gitignore` file according to your project needs. For example, since this is a template, the `/data/` folder is commented out and data will not be excluded from source control:
-
-```plaintext
-# exclude data from source control by default
-# /data/
-```
-
-Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
-
-## Duplicating the .env File
-To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
-
-```bash
-cp .env.example .env # Linux, macOS, Git Bash, WSL
-copy .env.example .env # Windows Command Prompt
-```
-
-This command creates a copy of `.env.example` and names it `.env`, allowing you to configure your environment variables specific to your setup.
-
 
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
+├── LICENSE            <- Open-source license
 ├── README.md          <- The top-level README for developers using this project
+├── creative           <- Images/Video for the dashboard
+|   
 ├── data
 │   ├── external       <- Data from third party sources
 │   ├── interim        <- Intermediate data that has been transformed
@@ -78,7 +100,7 @@ This command creates a copy of `.env.example` and names it `.env`, allowing you 
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-└── src                         <- Source code for this project
+├── src                         <- Source code for this project
     │
     ├── __init__.py             <- Makes src a Python module
     │
@@ -98,6 +120,7 @@ This command creates a copy of `.env.example` and names it `.env`, allowing you 
     │
     └── services                <- Service classes to connect with external platforms, tools, or APIs
         └── __init__.py 
+└── workbook            <- Tableau packaged workbook file location
 ```
 
 --------

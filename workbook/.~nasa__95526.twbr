@@ -1,0 +1,1297 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <_.fcp.LayerControlWidget.true...LayerControlWidget />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpecificWebTargetsForActions />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Meteorite_Landings_addedcountries' inline='true' name='federated.0r7v4d71v2o0cb13pu5vz0hh6udr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Meteorite_Landings_addedcountries' name='textscan.1l04g5n16eonik0zw0b571yvycu7'>
+            <connection class='textscan' directory='/Users/paulrodriguez/Documents/Documents - Paul’s MacBook Pro/Data Analyst School/_DataCamp/github/nasa-metorites-analysis/data/processed' filename='Meteorite_Landings_addedcountries.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l04g5n16eonik0zw0b571yvycu7' name='Meteorite_Landings_addedcountries.csv' table='[Meteorite_Landings_addedcountries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='string' name='nametype' ordinal='2' />
+            <column datatype='string' name='class' ordinal='3' />
+            <column datatype='real' name='mass (g)' ordinal='4' />
+            <column datatype='string' name='fall' ordinal='5' />
+            <column datatype='integer' name='year' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='string' name='category' ordinal='9' />
+            <column datatype='string' name='country' ordinal='10' />
+            <column datatype='string' name='city' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l04g5n16eonik0zw0b571yvycu7' name='Meteorite_Landings_addedcountries.csv' table='[Meteorite_Landings_addedcountries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='string' name='nametype' ordinal='2' />
+            <column datatype='string' name='class' ordinal='3' />
+            <column datatype='real' name='mass (g)' ordinal='4' />
+            <column datatype='string' name='fall' ordinal='5' />
+            <column datatype='integer' name='year' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='string' name='category' ordinal='9' />
+            <column datatype='string' name='country' ordinal='10' />
+            <column datatype='string' name='city' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nametype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nametype]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>nametype</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass (g)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass (g)]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>mass (g)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fall</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fall]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>fall</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[Meteorite_Landings_addedcountries.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Website' datatype='string' name='[Calculation_6722044692500348928]' role='dimension' semantic-role='[URL]' type='nominal'>
+        <calculation class='tableau' formula='&quot;https://encyclopedia-of-meteorites.com/meteorite?id=&quot;+STR([id])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Meteorite_Landings_addedcountries.csv' datatype='table' name='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Mass (G)' datatype='real' name='[mass (g)]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Nametype' datatype='string' name='[nametype]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' default-format='*' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[latitude]' derivation='None' name='[none:latitude:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[longitude]' derivation='None' name='[none:longitude:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Category)' hidden='true' name='[Action (Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Category,Country)' hidden='true' name='[Action (Category,Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Category,Latitude,Longitude,Name)' hidden='true' name='[Action (Category,Latitude,Longitude,Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[none:latitude:ok]' />
+          <groupfilter function='level-members' level='[none:longitude:ok]' />
+          <groupfilter function='level-members' level='[name]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Category,Latitude,Longitude,Name)' hidden='true' name='[Tooltip (Category,Latitude,Longitude,Name)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[none:latitude:ok]' />
+          <groupfilter function='level-members' level='[none:longitude:ok]' />
+          <groupfilter function='level-members' level='[name]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Category, Class'>
+          <field>[category]</field>
+          <field>[class]</field>
+        </drill-path>
+        <drill-path name='country, city'>
+          <field>[country]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/nz/1hpd12dx4ss5sfqz8ztwm8580000gn/T/tableau-temp/#TableauTemp_0qa7ww51vs584l11hem6d1k9dkzy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/09/2025 10:47:09 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38114</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nametype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nametype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nametype</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mass (g)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mass (g)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mass (g)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5978</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fall</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fall</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5176</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6750</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Meteorite_Landings_addedcountries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>905</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#000000'>
+              <bucket>&quot;Uncategorized&quot;</bucket>
+            </map>
+            <map to='#005759'>
+              <bucket>&quot;Iron&quot;</bucket>
+            </map>
+            <map to='#2a5452'>
+              <bucket>&quot;Achondrite&quot;</bucket>
+            </map>
+            <map to='#612e41'>
+              <bucket>&quot;Chondrite&quot;</bucket>
+            </map>
+            <map to='#7617b2'>
+              <bucket>&quot;Stony-iron&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Meteorite_Landings_addedcountries.csv' id='Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047'>
+            <properties context=''>
+              <relation connection='textscan.1l04g5n16eonik0zw0b571yvycu7' name='Meteorite_Landings_addedcountries.csv' table='[Meteorite_Landings_addedcountries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='integer' name='id' ordinal='1' />
+                  <column datatype='string' name='nametype' ordinal='2' />
+                  <column datatype='string' name='class' ordinal='3' />
+                  <column datatype='real' name='mass (g)' ordinal='4' />
+                  <column datatype='string' name='fall' ordinal='5' />
+                  <column datatype='integer' name='year' ordinal='6' />
+                  <column datatype='real' name='latitude' ordinal='7' />
+                  <column datatype='real' name='longitude' ordinal='8' />
+                  <column datatype='string' name='category' ordinal='9' />
+                  <column datatype='string' name='country' ordinal='10' />
+                  <column datatype='string' name='city' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_EA63854201234B8E8CCF437F5EBBC8E1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_52DAB659E53F4564AB0892E62D754F2B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Summary' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action4_DD1537618EC444FDA925D604587F34FB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Category' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Hyperlink1' name='[Action4_FD9F18B68D9B40B1A57EB7C5EC350F3B]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <link caption='' expression='&lt;ATTR([Calculation_6722044692500348928])&gt;'>
+        <url-action-type>specific-zone</url-action-type>
+        <url-action-target>12</url-action-target>
+      </link>
+    </action>
+    <datasources>
+      <datasource caption='Meteorite_Landings_addedcountries' name='federated.0r7v4d71v2o0cb13pu5vz0hh6udr' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0r7v4d71v2o0cb13pu5vz0hh6udr'>
+      <column caption='Website' datatype='string' name='[Calculation_6722044692500348928]' role='dimension' semantic-role='[URL]' type='nominal'>
+        <calculation class='tableau' formula='&quot;https://encyclopedia-of-meteorites.com/meteorite?id=&quot;+STR([id])' />
+      </column>
+      <column-instance column='[Calculation_6722044692500348928]' derivation='Attribute' name='[attr:Calculation_6722044692500348928:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Meteorite_Landings_addedcountries' name='federated.0r7v4d71v2o0cb13pu5vz0hh6udr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0r7v4d71v2o0cb13pu5vz0hh6udr'>
+            <column caption='Website' datatype='string' name='[Calculation_6722044692500348928]' role='dimension' semantic-role='[URL]' type='nominal'>
+              <calculation class='tableau' formula='&quot;https://encyclopedia-of-meteorites.com/meteorite?id=&quot;+STR([id])' />
+            </column>
+            <column-instance column='[Calculation_6722044692500348928]' derivation='Attribute' name='[attr:Calculation_6722044692500348928:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fall]' derivation='Attribute' name='[attr:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='Attribute' name='[attr:id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Mass (G)' datatype='real' name='[mass (g)]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass (g)]' derivation='Sum' name='[sum:mass (g):qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' default-format='*' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category)]'>
+            <groupfilter function='level-members' level='[category]' user:ui-action-filter='[Action3_52DAB659E53F4564AB0892E62D754F2B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_E7242621F02B430EB2A9737BEAD77267]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:fall:nk]'>
+            <groupfilter function='member' level='[none:fall:nk]' member='&quot;Fell&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:fall:nk]</column>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Country)]</column>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:longitude:qk]' field-type='quantitative' max='11910925.918163795' min='-21484250.583072722' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:latitude:qk]' field-type='quantitative' max='12928563.37542541' min='-8778300.5541752726' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#666666a5' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' />
+              <size column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[sum:mass (g):qk]' />
+              <tooltip column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:fall:nk]' />
+              <tooltip column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:year:qk]' />
+              <tooltip column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:id:qk]' />
+              <tooltip column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:Calculation_6722044692500348928:nk]' />
+              <text column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='15'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:fall:nk]> in <[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[sum:mass (g):qk]> grams]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:name:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:latitude:qk]</rows>
+        <cols>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:longitude:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff'>Names of Metorite, Hover for more info. Feel free to explore!</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:longitude:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:latitude:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:latitude:qk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:longitude:qk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:name:nk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[sum:mass (g):qk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:Calculation_6722044692500348928:nk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:fall:nk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:id:qk]</field>
+                      <field>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[attr:year:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Chondrite&quot;</value>
+                    <value>39.116669999999999</value>
+                    <value>-83.849999999999994</value>
+                    <value>&quot;Pricetown&quot;</value>
+                    <value>900.0</value>
+                    <value>&quot;https://encyclopedia-of-meteorites.com/meteorite?id=18888&quot;</value>
+                    <value>&quot;Fell&quot;</value>
+                    <value>18888</value>
+                    <value>1893</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{33E85A80-11AD-4B20-945B-7DDEA7CCD3F8}' />
+    </worksheet>
+    <worksheet name='Summary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Meteorite_Landings_addedcountries' name='federated.0r7v4d71v2o0cb13pu5vz0hh6udr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r7v4d71v2o0cb13pu5vz0hh6udr'>
+            <_.fcp.ObjectModelTableType.true...column caption='Meteorite_Landings_addedcountries.csv' datatype='table' name='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:ok]' pivot='key' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Meteorite_Landings_addedcountries.csv' datatype='integer' name='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_E7242621F02B430EB2A9737BEAD77267]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Latitude,Longitude,Name)]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action1_EA63854201234B8E8CCF437F5EBBC8E1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[category]' member='&quot;Chondrite&quot;' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[name]' member='&quot;Kunya-Urgench&quot;' />
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:latitude:ok]' member='42.25' />
+                    <groupfilter function='member' level='[none:longitude:ok]' member='59.200000000000003' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[category]' />
+                <hierarchy name='[none:latitude:ok]' />
+                <hierarchy name='[none:longitude:ok]' />
+                <hierarchy name='[name]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Country)]</column>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Latitude,Longitude,Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='27' />
+            <format attr='font-size' value='15' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='16' />
+            <format attr='font-size' data-class='total' scope='cols' value='14' />
+            <format attr='font-family' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='Helvetica' />
+            <format attr='text-align' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='center' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='background-color' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='#ffffff' />
+            <format attr='color' data-class='subtotal' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='#000000' />
+            <format attr='font-size' data-class='subtotal' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='20' />
+            <format attr='band-color' scope='rows' value='#0032a0' />
+            <format attr='background-color' value='#0032a0' />
+            <format attr='band-color' scope='cols' value='#0032a0' />
+            <format attr='color' data-class='subtotal' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='12' />
+            <format attr='font-family' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='Helvetica' />
+            <format attr='color' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='#000000' />
+            <format attr='text-align' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' value='center' />
+            <format attr='color' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='font-size' scope='cols' value='14' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='band-color' scope='rows' value='#0032a0' />
+            <format attr='background-color' value='#0032a0' />
+            <format attr='band-color' scope='cols' value='#0032a0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#0032a0' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Tableau Light' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Category:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Meteorites:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff' fontname='Helvetica' fontsize='18'>&lt;</run>
+                <run fontcolor='#ffffff' fontname='Helvetica' fontsize='18'>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]</run>
+                <run fontcolor='#ffffff' fontname='Helvetica' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]</cols>
+      </table>
+      <simple-id uuid='{A00A40D2-7C24-4D10-A4BF-954BD38336E7}' />
+    </worksheet>
+    <worksheet name='Table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Meteorite_Landings_addedcountries' name='federated.0r7v4d71v2o0cb13pu5vz0hh6udr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r7v4d71v2o0cb13pu5vz0hh6udr'>
+            <_.fcp.ObjectModelTableType.true...column caption='Meteorite_Landings_addedcountries.csv' datatype='table' name='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:ok]' pivot='key' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Meteorite_Landings_addedcountries.csv' datatype='integer' name='[__tableau_internal_object_id__].[Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category)]'>
+            <groupfilter function='level-members' level='[category]' user:ui-action-filter='[Action3_52DAB659E53F4564AB0892E62D754F2B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Latitude,Longitude,Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_EA63854201234B8E8CCF437F5EBBC8E1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[none:latitude:ok]' />
+              <groupfilter function='level-members' level='[none:longitude:ok]' />
+              <groupfilter function='level-members' level='[name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category)]</column>
+            <column>[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[Action (Category,Latitude,Longitude,Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:country:nk]' value='152' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[__tableau_internal_object_id__].[cnt:Meteorite_Landings_addedcountries.csv_D925DACFF278451096E039DEA16EB047:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:country:nk] / [federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1E1E7CEF-D7E5-49D1-85A8-213470A7C5D4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_13' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='85462' id='8' param='horz' type-v2='layout-flow' w='65946' x='686' y='13419'>
+            <zone h='85462' id='6' type-v2='layout-basic' w='65946' x='686' y='13419'>
+              <zone h='70359' id='5' name='Map' show-title='false' w='65946' x='686' y='22642'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9223' id='3' name='Summary' show-title='false' w='65946' x='686' y='13419'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#0032a0' />
+                </zone-style>
+              </zone>
+              <zone h='5880' id='9' leg-item-layout='horz' leg-item-order='normal' name='Map' pane-specification-id='0' param='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' show-title='false' type-v2='color' w='65946' x='686' y='93001'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='' h='85462' id='12' param='https://encyclopedia-of-meteorites.com/meteorite?id=12379' type-v2='web' w='32682' x='66632' y='13419'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='12300' id='13' type-v2='text' w='98628' x='686' y='1119'>
+            <formatted-text>
+              <run fontcolor='#ffffff' fontname='Helvetica' fontsize='20'>NASA Recorded Meteorite Landings</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#0032a0' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#0032a0' />
+          </zone-style>
+        </zone>
+        <zone h='3357' id='14' type-v2='dashboard-object' w='2058' x='66638' y='80000'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{969DCFA2-2492-4F5E-BFCA-852ECAF38F92}&quot; zone-id=&quot;14&quot; zone-ids=[9]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97762' id='15' param='vert' type-v2='layout-flow' w='98628' x='686' y='1119'>
+                <zone forceUpdate='true' h='12300' id='13' type-v2='text' w='98628' x='686' y='1119'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Helvetica' fontsize='20'>NASA Recorded Meteorite Landings</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0032a0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='66' h='9223' id='3' is-fixed='true' name='Summary' show-title='false' w='65946' x='686' y='13419'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0032a0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='' h='85462' id='12' is-fixed='true' param='https://encyclopedia-of-meteorites.com/meteorite?id=12379' type-v2='web' w='32682' x='66632' y='13419'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='70359' id='5' is-fixed='true' name='Map' show-title='false' w='65946' x='686' y='22642'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5880' id='9' leg-item-layout='horz' leg-item-order='normal' name='Map' pane-specification-id='0' param='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' show-title='false' type-v2='color' w='65946' x='686' y='93001'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#0032a0' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4B322307-65E9-47C3-A49D-3C1B69EED2A5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{56CA0E80-45DB-4137-A931-F90C5E6A7458}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[none:category:nk]' show-title='false' type='color' />
+            <card pane-specification-id='0' param='[federated.0r7v4d71v2o0cb13pu5vz0hh6udr].[sum:mass (g):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1491</bucket>
+          </multibucket>
+        </current-page>
+        <floating-toolbar-visibility value='1' />
+        <geo-search-visibility value='1' />
+        <default-map-tool-selection tool='1' />
+        <_.fcp.LayerControlWidget.true...layer-control toolbar-button-enabled='false' />
+      </viewpoint>
+      <simple-id uuid='{69A56CC8-D8DF-4E52-81E5-ECBD81C04C61}' />
+    </window>
+    <window class='worksheet' name='Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{73150F02-74A2-43E6-A3AF-FFC2A30D85A4}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Summary'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{969DCFA2-2492-4F5E-BFCA-852ECAF38F92}' />
+    </window>
+  </windows>
+</workbook>
